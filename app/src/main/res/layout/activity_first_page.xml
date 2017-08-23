@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background2"
+    tools:context="com.shreyasdevalapurkar.www.theboardgamehandbook.FirstPage">
+
+    <TextView
+        android:text="Welcome to The Board Game Handbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="22sp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Please choose from one of the following categories:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:fontFamily="casual"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Card Games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardgamesbutton"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_blue_light"
+        android:fontFamily="casual"
+        android:textSize="12sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Role Playing Games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/roleplayinggamesbutton"
+        android:fontFamily="casual"
+        android:background="@android:color/holo_red_light"
+        android:layout_alignBaseline="@+id/cardgamesbutton"
+        android:layout_alignBottom="@+id/cardgamesbutton"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Mind Games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/roleplayinggamesbutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/mindgamesbutton"
+        android:fontFamily="casual"
+        android:background="@android:color/holo_orange_light"
+        android:textSize="12sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="War Games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wargamesbutton"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:fontFamily="casual"
+        android:textSize="12sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/historicalgamesbutton"
+        android:layout_alignBottom="@+id/historicalgamesbutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Trivia Games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/triviagamesbutton"
+        android:layout_alignTop="@+id/partygamesbutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="casual"
+        android:textSize="12sp"
+        android:textStyle="normal|bold"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:text="Historical Games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/historicalgamesbutton"
+        android:fontFamily="casual"
+        android:textSize="12sp"
+        android:textStyle="normal|bold"
+        android:background="?android:attr/textColorLinkInverse"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/roleplayinggamesbutton"
+        android:layout_alignLeft="@+id/roleplayinggamesbutton"
+        android:layout_alignStart="@+id/roleplayinggamesbutton"
+        android:layout_alignRight="@+id/roleplayinggamesbutton"
+        android:layout_alignEnd="@+id/roleplayinggamesbutton" />
+
+    <Button
+        android:text="Murder/Mystery Games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/murdermysterygamesbutton"
+        android:background="@android:color/darker_gray"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:textSize="12sp"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_alignBaseline="@+id/wordgamesbutton"
+        android:layout_alignBottom="@+id/wordgamesbutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Horror Games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horrorgamesbutton"
+        android:background="@android:color/holo_purple"
+        android:fontFamily="casual"
+        android:textSize="12sp"
+        android:textStyle="normal|bold"
+        android:layout_alignTop="@+id/historicalgamesbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/cardgamesbutton"
+        android:layout_alignEnd="@+id/cardgamesbutton" />
+
+    <Button
+        android:text="Party Games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/partygamesbutton"
+        android:fontFamily="casual"
+        android:textSize="12sp"
+        android:textStyle="normal|bold"
+        android:background="@android:color/holo_red_dark"
+        android:layout_below="@+id/historicalgamesbutton"
+        android:layout_alignLeft="@+id/historicalgamesbutton"
+        android:layout_alignStart="@+id/historicalgamesbutton"
+        android:layout_marginTop="33dp"
+        android:layout_alignRight="@+id/historicalgamesbutton"
+        android:layout_alignEnd="@+id/historicalgamesbutton" />
+
+    <Button
+        android:text="Sports Games"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sportsgamesbutton"
+        android:background="@android:color/holo_blue_bright"
+        android:fontFamily="casual"
+        android:textSize="12sp"
+        android:textStyle="normal|bold"
+        android:layout_alignTop="@+id/partygamesbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wordgamesbutton"
+        android:text="Word Games"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:background="@android:color/holo_green_dark"
+        android:textSize="12sp"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_below="@+id/partygamesbutton"
+        android:layout_toLeftOf="@+id/murdermysterygamesbutton"
+        android:layout_toStartOf="@+id/murdermysterygamesbutton"
+        android:layout_marginTop="34dp" />
+
+</RelativeLayout>
